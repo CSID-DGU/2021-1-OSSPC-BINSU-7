@@ -1,5 +1,0 @@
-git add sy.txt
-git commit -m "add text file"
-git push
-
-#git commit -am "add text file"->한번에 가능
