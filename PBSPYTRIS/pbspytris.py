@@ -591,8 +591,8 @@ score = 0
 level = 1
 goal = level * 5
 bottom_count = 0
-gold = 0
-s_gold = 0
+gold = 0 #총 골드 초기화
+s_gold = 0 #게임 한판당 얻을 골드
 hard_drop = False
 
 volume_setting = False
@@ -1182,7 +1182,7 @@ while not done:
                     combo_count = 0
                     goal = level * 5
                     bottom_count = 0
-                    s_gold = 0
+                    s_gold = 0 # 해당 게임 얻을 골드 초기화
                     hard_drop = False
                     name_location = 0
                     name = [65, 65, 65]
@@ -1772,8 +1772,8 @@ while not done:
                     outfile.write(chr(name[0]) + chr(name[1]) + chr(name[2]) + ' ' + str(score) + '\n')
                     outfile.close()
 
-                    s_gold = (int)score*0.01
-                    gold += s_gold
+                    s_gold = int(score*0.01) # score 점수에 0.01배를 하여 해당 게임 골드 계산
+                    gold += s_gold # 수중 골드에 해당 게임 골드 더하기
 
                     game_over = False
                     hold = False  #
@@ -1788,7 +1788,7 @@ while not done:
                     level = 1
                     goal = level * 5
                     bottom_count = 0  #
-                    s_gold = 0
+                    s_gold = 0 
                     hard_drop = False  #
                     name_location = 0
                     name = [65, 65, 65]
