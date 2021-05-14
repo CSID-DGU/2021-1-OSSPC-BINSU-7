@@ -1,2 +1,0 @@
-normal #6d78ff
-clicked #a1a8ff
