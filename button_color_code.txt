@@ -1,2 +1,8 @@
-normal #6d78ff
-clicked #a1a8ff
+normal #7868e6
+clicked #b8b5ff
+
+board margin #ffd966
+board color #ffe699
+board name #ff5050
+
+yellow #ffcc00
