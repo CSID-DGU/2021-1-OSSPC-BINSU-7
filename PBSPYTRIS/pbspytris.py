@@ -959,6 +959,7 @@ def set_initial_values():
     framerate_2P_blockmove = framerate_2P * 3 # 블록 이동 시 속도
     game_speed_2P = framerate_2P * 20 # 2P 게임 기본 속도
 
+
     # Initial values
     blink = False
     start = False
@@ -1764,8 +1765,7 @@ while not done:
                     ui_variables.click_sound.play()
 
     elif difficulty: # diff board little complete
-        draw_image(screen, board_difficulty, board_width * 0.5, board_height * 0.7, 
-            int(board_width * 0.8), int(board_height * 0.8))
+        draw_image(screen, board_difficulty, board_width * 0.5, board_height * 0.7, int(board_width * 0.8), int(board_height * 0.8))
         back_right_button.draw(screen, (0, 0, 0))
         start_left_button.draw(screen, (0, 0, 0))
         easy_button.draw(screen, (0, 0, 0))
